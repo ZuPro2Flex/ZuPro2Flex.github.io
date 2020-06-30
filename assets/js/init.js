@@ -1,6 +1,7 @@
 (function ($) {
 
   var intervall = null;
+  var duration = 5000;
 
   $(document).ready(function () {
     initMaterialize();
