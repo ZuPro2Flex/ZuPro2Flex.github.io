@@ -1,7 +1,7 @@
 (function ($) {
 
   var intervall = null;
-  var duration = 5000;
+  var duration = 5500;
 
   $(document).ready(function () {
     initMaterialize();
@@ -9,7 +9,7 @@
     $("#pause-btn").on("click", pauseCarousel);
 
     // autoplay of the banner
-    setTimeout(playCarousel, 7000);
+    //setTimeout(playCarousel, 7000);
   });
 
   // functions 
@@ -47,7 +47,6 @@
       fullWidth: true,
     });
   }
-
 
   function triggerCarousel() {
     $("#home-carousel").carousel('next');

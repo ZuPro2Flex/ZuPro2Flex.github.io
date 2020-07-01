@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div id="home-carousel" class="carousel carousel-slider center">
+<div id="home-carousel" style="min-height:400px;" class="carousel carousel-slider center">
 
   <div class="carousel-fixed-item center">
     <div class="carousel-buttns">
@@ -10,15 +10,14 @@ layout: default
       <a id="pause-btn" class="btn btn-flat white-text waves-effect waves-light"><i class="mdi mdi-pause"></i></a>
     </div>
     <div class="container">
-      <a class="btn btn-large" href="#get-startet">Get Started</a>
+      <a class="btn btn-large" href="#get-startet">Mehr</a>
     </div>
   </div>
 
   <div id="carousel-1" class="carousel-item white-text container" href="#one!">
     <div class="hide-on-small-only">
       <div class="container claim">
-        <h2 class="typewriter">Title one</h2>
-        <p class="white-text">This is your second panel</p>
+        <img height="150" class="logo-carousel" src="{{ "/assets/img/zupro2flex.svg" | relative_url }}">
       </div>
     </div>
   </div>
@@ -40,15 +39,14 @@ layout: default
 
 <div class="container">
   <div class="section scrollspy" id="get-startet">
+
     <!--   Icon Section   -->
     <div class="row">
       <div class="col s12 m4">
         <div class="icon-block">
           <h2 class="center"><i class="mdi mdi-cogs medium"></i></h2>
           <h5 class="center">Technologisch</h5>
-          <p class="light">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-            dolores et ea rebum.</p>
+          <p class="light"></p>
         </div>
       </div>
 
@@ -56,9 +54,7 @@ layout: default
         <div class="icon-block">
           <h2 class="center"><i class="mdi mdi-office-building medium"></i></h2>
           <h5 class="center">Wirtschaftlich</h5>
-          <p class="light">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua.</p>
+          <p class="light"></p>
         </div>
       </div>
 
@@ -66,15 +62,42 @@ layout: default
         <div class="icon-block">
           <h2 class="center"><i class="mdi mdi-book-open-page-variant medium"></i></h2>
           <h5 class="center">Juristisch</h5>
-          <p class="light">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          <p class="light"></p>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col s12 center">Für eine Zielorientierte Geschäftsmodellentwicklung werden neben
+        technisch-technologischen
+        Fragestellungen wirtschaftliche und juristische Aspekte von Pay-per-X-Geschäftsmodellen betrachtet. Dabei können
+        Sensor- und Datenkonzepte genutzt werden, um einen Maschinennutzungs- und Risikoindex zu bilden. Dieser fungiert
+        zum einen als Abrechenbare Einheit und zum anderen als digitaler Notar. Die Geschäftssicherheiit wird dadurch
+        für alle Beteiligten gewahrt.
+      </div>
+    </div>
   </div>
+
+  <div class="row">
+    <div class="col s12 m6 l8">
+      <img alt="iwu" width="100%" class="z-depth-3 hide-on-med-and-up"
+        src="{{ "/assets/img/schema.png" | relative_url }}" />
+      <img alt="iwu" width="100%" class="materialboxed z-depth-3 hide-on-small-only"
+        data-caption="Das Konzept hinter ZuPro2Flex" src="{{ "/assets/img/schema.png" | relative_url }}" />
+    </div>
+    <div class="col s12 m6 l4">
+      Die Basis für die im Projekt adressierten Fragestellungen bildet ein Grundkonzept zur Realisierung von Pay-per-
+      X-Geschäftsmodellen. Dieses ist in der Abbildung dargestellt. In diesem Konzept sind sechs
+      Querschnitts-technologien (Q1 bis Q6) als Enabler von Pay-per-X-Ge-schäftsmodellen verortet, welche im
+      Projektvorhaben weiter-entwickelt und für die Nutzung innerhalb der Geschäftsmodelle angepasst werden.
+    </div>
+  </div>
+
 </div>
 
+
+
 <div class="container last-post">
+  <div class="divider"></div>
   <section>
     <h5>Letzte Beiträge</h5>
     <div class="row">
