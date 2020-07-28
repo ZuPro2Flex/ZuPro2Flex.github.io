@@ -8,14 +8,6 @@
     max-height: 1.6em;
 }
 
-.partner {
-    max-width: 120px;
-    max-height: 90px;
-    margin: 10px;
-}
-
-
-
 /* Class for when element is above threshold */
 .pin-top {
   position: relative;
@@ -83,13 +75,20 @@ figure {
     margin-bottom: 0px !important;
 }
 
+.no-padding {
+  padding: 0px;
+}
+
 .partner {
-    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-      filter: gray; /* IE5+ */
-      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-      -webkit-transition: all .5s ease-in-out;  
-      transition: all .5s ease-in-out;  
-    }
+  max-width: 120px;
+  max-height: 90px;
+  margin: 5px;
+  /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all .5s ease-in-out;  
+  transition: all .5s ease-in-out;  
+}
 
     .partner:hover {
     filter: none;
