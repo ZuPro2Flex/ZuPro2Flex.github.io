@@ -2,43 +2,20 @@
 layout: default
 ---
 
-<div id="home-carousel" style="min-height:400px;" class="carousel carousel-slider center">
-
-  <div class="carousel-fixed-item center">
-    <div class="carousel-buttns">
-      <a id="play-btn" class="btn btn-flat white-text waves-effect waves-light"><i class="mdi mdi-play"></i></a>
-      <a id="pause-btn" class="btn btn-flat white-text waves-effect waves-light"><i class="mdi mdi-pause"></i></a>
-    </div>
-    <div class="container">
-      <a class="btn btn-large" href="#get-startet">Mehr</a>
-    </div>
-  </div>
-
-  <div id="carousel-1" class="carousel-item white-text container" href="#one!">
-    <div class="hide-on-small-only">
-      <div class="container claim">
-        <img height="150" class="logo-carousel" src="{{ "/assets/img/zupro2flex.svg" | relative_url }}">
-      </div>
-    </div>
-  </div>
-  <div id="carousel-2" class="carousel-item amber white-text" href="#two!">
-    <h2>Title two</h2>
-    <p class="white-text">This is your second panel</p>
-  </div>
-  <div id="carousel-3" class="carousel-item green white-text" href="#three!">
-    <h2>Title three</h2>
-    <p class="white-text">This is your third panel</p>
+<div class="parallax-container" style="position: absolute;top: 0px;width: 100%;height: 600px;">
+  <div class="parallax">
+    <img src="{{ "/assets/img/banner_1.png" | relative_url }}"></div>
+  <div class="container center" style="position:relative;top:70%;">
+    <a class="btn btn-large" href="#get-startet"><i class="mdi mdi-presentation-play left"></i>Mehr</a>
   </div>
 </div>
 
-<div class="section no-pad-bot" id="index-banner">
-  <div class="container">
-    <h5 class="header center light">{{ content }}</h5>
-  </div>
-</div>
-
-<div class="container">
+<div class="container" style="margin-top:600px">
   <div class="section scrollspy" id="get-startet">
+    <div class="center claim">
+      <img height="150" class="logo-carousel" src="{{ "/assets/img/zupro2flex.svg" | relative_url }}">
+    </div>
+    <h5 class="center light">{{ content }}</h5>
 
     <!--   Icon Section   -->
     <div class="row">
@@ -66,17 +43,7 @@ layout: default
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col s12 center">Für eine Zielorientierte Geschäftsmodellentwicklung werden neben
-        technisch-technologischen
-        Fragestellungen wirtschaftliche und juristische Aspekte von Pay-per-X-Geschäftsmodellen betrachtet. Dabei können
-        Sensor- und Datenkonzepte genutzt werden, um einen Maschinennutzungs- und Risikoindex zu bilden. Dieser fungiert
-        zum einen als Abrechenbare Einheit und zum anderen als digitaler Notar. Die Geschäftssicherheiit wird dadurch
-        für alle Beteiligten gewahrt.
-      </div>
-    </div>
   </div>
-
   <div class="row">
     <div class="col s12 m6 l8">
       <img alt="iwu" width="100%" class="z-depth-3 hide-on-med-and-up"
@@ -85,13 +52,21 @@ layout: default
         data-caption="Das Konzept hinter ZuPro2Flex" src="{{ "/assets/img/schema.png" | relative_url }}" />
     </div>
     <div class="col s12 m6 l4">
-      Die Basis für die im Projekt adressierten Fragestellungen bildet ein Grundkonzept zur Realisierung von Pay-per-
-      X-Geschäftsmodellen. Dieses ist in der Abbildung dargestellt. In diesem Konzept sind sechs
-      Querschnitts-technologien (Q1 bis Q6) als Enabler von Pay-per-X-Ge-schäftsmodellen verortet, welche im
-      Projektvorhaben weiter-entwickelt und für die Nutzung innerhalb der Geschäftsmodelle angepasst werden.
+      Die Basis für die Fragestellungen des Projekts bildet ein Grundkonzept zur Realisierung von
+      Pay-per-X-Geschäftsmodellen, welches in der Abbildung dargestellt ist. In diesem Konzept stellen die
+      Querschnittstechnologien Transparenz und Integration Enabler von Pay-per-X-Geschäftsmodellen dar. Diese
+      Querschnittstechnologien werden im Projektvorhaben weiterentwickelt und für die Nutzung innerhalb der
+      Geschäftsmodelle angepasst.
     </div>
   </div>
-
+  <div class="row">
+    <div class="col s12 center">Für eine zielorientierte Geschäftsmodellentwicklung werden neben
+      technisch-technologischen Fragestellungen wirtschaftliche und juristische Aspekte von
+      Pay-per-X-Geschäftsmodellen betrachtet. Dabei können Sensor- und Datenkonzepte genutzt werden, um einen
+      Maschinennutzungs- und Risikoindex zu bilden. Dieser fungiert zum einen als abrechenbare Einheit und zum anderen
+      als digitaler Notar. Dadurch wird die Geschäftssicherheit für alle Beteiligten gewahrt.
+    </div>
+  </div>
 </div>
 
 

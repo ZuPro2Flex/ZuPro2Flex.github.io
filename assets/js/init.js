@@ -19,7 +19,7 @@
     M.AutoInit();
 
     $('.scrollspy').scrollSpy( {
-      scrollOffset: 0
+      scrollOffset: 45
     });
 
     $('.materialboxed').materialbox();

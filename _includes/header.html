@@ -1,8 +1,10 @@
-  <nav role="navigation">
-    <div class="nav-wrapper container">
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper container ">
       <div class="hide-on-med-and-down">
         <a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">
-          <img height="50" width="50" style="position:relative;top:8px;" src="{{ "/assets/img/pro2x.svg" | relative_url }}" /></a>
+          <img height="50" width="50" style="position:relative;top:8px;"
+            src="{{ "/assets/img/pro2x.svg" | relative_url }}" /></a>
 
         {% assign default_paths = site.pages | map: "path" %}
         {% assign page_paths = site.header_pages | default: default_paths %}
@@ -23,33 +25,39 @@
       <div class="hide-on-large-only">
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <a id="logo-container" class="brand-logo center" href="{{ "/" | relative_url }}">
-          <img height="45" width="45" style="position:relative;top:5px;" src="{{ "/assets/img/pro2x.svg" | relative_url }}" />
+          <img height="45" width="45" style="position:relative;top:5px;"
+            src="{{ "/assets/img/pro2x.svg" | relative_url }}" />
         </a>
       </div>
     </div>
   </nav>
-  <ul id="slide-out" class="sidenav">
-      <li><div class="user-view">
-          <div class="background">
-            <img width="200%" src="{{ "/assets/img/banner_1.jpg" | relative_url }}">
-          </div>
-          <a href="{{ "/" | relative_url }}"><img height="45" src="{{ "/assets/img/zupro2flex.svg" | relative_url }}" /></a>
-          <br />
-          <br />
-        </div></li>
-      <li><a class="waves-effect waves-light" href="{{ "/" | relative_url }}">Start</a></li>
-      <li>
-        <div class="divider"></div>
-      </li>
-     
-      {% if page_paths %}
-      {% for path in page_paths %}
-      {% assign my_page = site.pages | where: "path", path | first %}
-      {% if my_page.title %}
-      <li><a class="waves-effect waves-light"
-          href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-      {% endif %}
-      {% endfor %}
-      {% endif %}
-      <li><a class="waves-effect waves-light" href="{{ "/articles" | relative_url }}">Neues</a></li>
-    </ul>
+</div>
+
+<ul id="slide-out" class="sidenav">
+  <li>
+    <div class="user-view">
+      <div class="background">
+        <img width="200%" src="{{ "/assets/img/banner_1.jpg" | relative_url }}">
+      </div>
+      <a href="{{ "/" | relative_url }}"><img height="45"
+          src="{{ "/assets/img/zupro2flex.svg" | relative_url }}" /></a>
+      <br />
+      <br />
+    </div>
+  </li>
+  <li><a class="waves-effect waves-light" href="{{ "/" | relative_url }}">Start</a></li>
+  <li>
+    <div class="divider"></div>
+  </li>
+
+  {% if page_paths %}
+  {% for path in page_paths %}
+  {% assign my_page = site.pages | where: "path", path | first %}
+  {% if my_page.title %}
+  <li><a class="waves-effect waves-light" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+  <li><a class="waves-effect waves-light" href="{{ "/articles" | relative_url }}">Neues</a></li>
+</ul>
