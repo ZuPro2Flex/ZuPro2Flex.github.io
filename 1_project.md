@@ -32,10 +32,6 @@ Im Projekt werden sechs Querschnittsthemen adressiert und an fünf Pilotanwendun
             <td>01.05.2020 – 30.04.2023</td>
         </tr>
         <tr>
-            <td>Projektträger</td>
-            <td>PTKA (BMBF)</td>
-        </tr>
-        <tr>
             <td style="vertical-align: top;">Partner</td>
             <td>
                 EMA-Tec GmbH <br>
@@ -55,7 +51,11 @@ Im Projekt werden sechs Querschnittsthemen adressiert und an fünf Pilotanwendun
             <td>Bundesministerium für Bildung und Forschung</td>
         </tr>
         <tr>
-            <td>Ansprechpartner</td>
+            <td>Projektträger</td>
+            <td>Projektträger Karlsruhe PTKA</td>
+        </tr>
+        <tr>
+            <td>Ansprechpartner des Projekts</td>
             <td>
                 <a href="mailto:mspindler@hypneu.de?subject={{site.subject}}">Matthias Spindler</a> und
                 <a href="mailto:robin.kurth@iwu.fraunhofer.de?subject={{site.subject}}">Robin Kurth</a>
