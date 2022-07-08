@@ -4,10 +4,6 @@ layout: default
 
 <div class="container last-post">
   <h1 class="page-title">Artikel zum Projekt</h1>
-  <h6>
-    Your awesome blog articles.
-  </h6>
-  <br /><br />
 
   <div class="row">
     <div class="col s12 m8 l9">
@@ -46,8 +42,9 @@ layout: default
           {% for post in site.categories[category_name] %}
           <article class="archive-item">
             {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
-            <div class="chip"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: date_format }} -
-                {{ post.title | escape }}</a></div>
+            <div class="chip" style="max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">
+				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: date_format }} - {{ post.title | escape }}</a>
+            </div>
           </article>
           {% endfor %}
       </div>
